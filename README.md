@@ -1,39 +1,44 @@
 # json-to-md
 Convert Json Schema to MarkDown
 
-using
+# using
 
-Clone into folder module
+Clone into folder modules
 
 Use it like this:
 
+```js
 var parse = require('json-to-md')
 var schema = // An object that is a valid JSON Schema
 var markdown = parse(schema)
-There are plenty of examples in the test folder, but a very simple example would be as follows:
+```
+A JSON file:
 
-For a JSON file like this:
-
+```json
 {
-    "$schema": "http://example.com#",
-    "title": "Example",
-    "description": "Testing Script.",
-    "type": "object",
-    "properties": {
-        "price": {
-            "description": "Testing.....",
-            "type": "number"
-        }
-    }
+	"$schema": "http://example.com#",
+	"title": "Example",
+	"description": "This Json file.",
+	"type": "object",
+	"properties": {
+		"price": {
+			"description": "Testing.....",
+			"type": "number"
+		}
+	}
 }
+```
+
 The output would be:
 
+```markdown
 # Example Schema
 
-Testing Script.
+This Json file.
 
 The schema defines the following properties:
 
 ## `price` (number)
 
 Testing.....
+```
