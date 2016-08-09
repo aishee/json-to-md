@@ -1,0 +1,23 @@
+{
+  "name": "json-to-markdown",
+  "version": "1.0.2",
+  "description": "JSON schema into a md file",
+  "main": "main.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "json-schema",
+    "markdown"
+  ],
+  "author": "aishee",
+  "license": "GNU",
+  "dependencies": {
+    "is-my-json-valid": "^2.13.1",
+    "tape": "^4.0.0"
+  }
+}
